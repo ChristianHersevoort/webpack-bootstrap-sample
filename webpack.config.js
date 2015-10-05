@@ -10,7 +10,7 @@ module.exports = {
     },
     devtool: "eval",
     output: {
-        path: 'target/META-INF/resources/webjars/webpack-bootstrap-sample/',
+        path: 'target/classes/META-INF/resources/webjars/webpack-bootstrap-sample/',
         filename: "[name].js",
         chunkFilename: "[id].js"
     },
