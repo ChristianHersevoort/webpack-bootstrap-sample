@@ -30,12 +30,15 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-		loader: ExtractTextPlugin.extract("style-loader", "css!sass?outputStyle=expanded")
+		        loader: ExtractTextPlugin.extract("style-loader", "css!sass?outputStyle=expanded")
             },
             {
-		 test: /\.js$/,
-	         loaders: ['babel'],
-                 include: path.join(__dirname, 'src')
+		        test: /\.js$/,
+	            loader: 'babel',
+                include: path.join(__dirname, 'src'),
+                query: {
+                    presets: ['es2015']
+                }
             }
         ]
     },
